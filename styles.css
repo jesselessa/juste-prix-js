@@ -42,7 +42,7 @@ h1 {
 
 }
 
-input {
+#prix {
     width: 80%;
     font-size: 1.5rem;   
 }
@@ -57,7 +57,7 @@ button:hover{
     cursor: pointer;
 }
 
-#input, button{
+#prix, button{
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
@@ -87,14 +87,48 @@ span {
     padding-left: 1rem;
 }
 
-.moins {
+.less {
     background-color: #ffa372;
 }
 
-.plus {
+.more {
     background-color: #f67280;
 }
 
-.juste {
+.correct {
     background-color : #a9e3ce;
+}
+
+/*! MEDIA QUERIES */
+
+@media screen and (max-width: 766px) {
+    #form {
+        width: 90vw;
+        padding : 2rem 1rem;    
+    }
+
+    .inputGroup {
+        flex-direction: column;
+    }
+
+    #prix, button {
+        width: 100%;
+    }
+
+    #prix {
+        font-size: 1.3rem;
+    }
+
+    button{
+        font-size: 1.5rem;
+    }
+
+    #instructions {
+        width: 90vw;
+    }
+
+    .instruction {
+        height: 5rem;
+    }
+    
 }
