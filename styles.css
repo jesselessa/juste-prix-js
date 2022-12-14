@@ -20,7 +20,7 @@ h1 {
     color: teal;
 }
 
-form{
+#form{
     display: flex;
     flex-direction: column;
     justify-content: center;      
@@ -57,7 +57,7 @@ button:hover{
     cursor: pointer;
 }
 
-input, button{
+#input, button{
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
@@ -78,7 +78,7 @@ span {
     gap: 1rem;
 }
 
-.moins, .plus, .juste {
+.instruction {
     width: 100%;
     height: 4rem;
     display: flex;
