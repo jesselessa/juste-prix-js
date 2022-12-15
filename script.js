@@ -5,9 +5,10 @@ let form = document.querySelector("#form");
 let guess = document.querySelector("#guess");
 let reset = document.querySelector("#reset");
 
-//* Step 2 - Hide error
+//* Step 2 - Hide error and reset button
 
 error.style.display = "none";
+reset.style.display = "none";
 
 //* Step 3 - Create other variables
 let randomNumber = Math.floor(Math.random() * 101); // In order to generate an integer number between 0 and 100, we have to multiply the generated random number with Math.random() with the number of elements thats we want :
@@ -19,9 +20,15 @@ let strokes = 0; // Number of strokes/moves (everytime a user makes a proposal)
 
 let chosenNumber;
 
-//* Step 4 - Create a function "check"
+//* Step 4 - Create a function "check" and a function resetForm
 const check = (number) => {
   // We can create an object => everytime we gonna make a new check, we gonna add an object into our browser (a div with 2 classes : instruction & less/more/correct)
+
+  const resetForm = () => {
+    reset.addEventListener("click", () => {
+      location.reload(); // Reset form by refreshing page
+    });
+  };
 
   let instruction = document.createElement("div");
 
@@ -41,6 +48,9 @@ const check = (number) => {
     instruction.className = "instruction correct";
     // Disable button when number found
     input.disabled = true;
+    // Display reset button
+    reset.style.display = "inline";
+    resetForm();
   }
   // Add element to our HTML page
   document.querySelector("#instructions").prepend(instruction);
@@ -68,11 +78,6 @@ form.addEventListener("submit", (e) => {
     chosenNumber = input.value; // Store number chosen by user
     input.value = ""; // Reset input
 
-    guess.addEventListener("click", () => {});
     check(chosenNumber); // Call our function that checks if chosen number is correct
-
-    reset.addEventListener("click", () => {
-      location.reload(); // Reset form by refreshing page
-    });
   }
 });
