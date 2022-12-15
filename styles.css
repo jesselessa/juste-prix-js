@@ -25,7 +25,7 @@ h1 {
     flex-direction: column;
     justify-content: center;      
     background-color: lightblue;
-    width: 65vw;
+    width: 70vw;
     margin: 1rem auto;
     padding: 4rem 2.5rem;
     gap: 2rem;
@@ -63,6 +63,11 @@ button:hover{
     border: none;
 }
 
+#reset {
+    background-color: #f67280;
+
+}
+
 span {
     font-size: 1.3rem;
     color: #b30000;
@@ -71,7 +76,7 @@ span {
 #instructions {
     display: flex;
     flex-direction: column;
-    width: 65vw;
+    width: 70vw;
     margin:auto;
     font-size: 1.5rem;
     border-radius: 1rem;
@@ -101,12 +106,30 @@ span {
 
 /*! MEDIA QUERIES */
 
+@media screen and (max-width: 992px) {
+    #prix, button {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}
+
 @media screen and (max-width: 766px) {
     #form {
-        width: 90vw;
+        width: 85vw;
         padding : 2rem 1rem;    
     }
 
+    #instructions {
+        width: 85vw;
+        font-size: 1.3rem;
+
+    }
+
+    .instruction {
+        height: 5rem;
+
+    }
+    
     .inputGroup {
         flex-direction: column;
     }
@@ -114,21 +137,4 @@ span {
     #prix, button {
         width: 100%;
     }
-
-    #prix {
-        font-size: 1.3rem;
-    }
-
-    button{
-        font-size: 1.5rem;
-    }
-
-    #instructions {
-        width: 90vw;
-    }
-
-    .instruction {
-        height: 5rem;
-    }
-    
 }

@@ -2,6 +2,8 @@
 let input = document.querySelector("#prix");
 let error = document.querySelector("span");
 let form = document.querySelector("#form");
+let guess = document.querySelector("#guess");
+let reset = document.querySelector("#reset");
 
 //* Step 2 - Hide error
 
@@ -37,6 +39,8 @@ const check = (number) => {
     // It's correct !
     instruction.textContent = `#${strokes} (${number}) Félicitations, vous avez trouvé le juste prix !`;
     instruction.className = "instruction correct";
+    // Disable button when number found
+    input.disabled = true;
   }
   // Add element to our HTML page
   document.querySelector("#instructions").prepend(instruction);
@@ -53,6 +57,7 @@ input.addEventListener("keyup", () => {
 
 //* Step 6 - Act when sending the form
 form.addEventListener("submit", (e) => {
+  // Prevent form default behaviour
   e.preventDefault();
 
   if (isNaN(input.value) || input.value == "") {
@@ -62,6 +67,12 @@ form.addEventListener("submit", (e) => {
     input.style.border = "0.2rem solid grey"; // Valid entry
     chosenNumber = input.value; // Store number chosen by user
     input.value = ""; // Reset input
+
+    guess.addEventListener("click", () => {});
     check(chosenNumber); // Call our function that checks if chosen number is correct
+
+    reset.addEventListener("click", () => {
+      location.reload(); // Reset form by refreshing page
+    });
   }
 });
