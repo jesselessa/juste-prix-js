@@ -2,11 +2,9 @@
 let input = document.querySelector("#prix");
 let error = document.querySelector("span");
 let form = document.querySelector("#form");
-let guess = document.querySelector("#guess");
 let reset = document.querySelector("#reset");
 
 //* Step 2 - Hide error and reset button
-
 error.style.display = "none";
 reset.style.display = "none";
 
@@ -23,12 +21,6 @@ let chosenNumber;
 //* Step 4 - Create a function "check" and a function resetForm
 const check = (number) => {
   // We can create an object => everytime we gonna make a new check, we gonna add an object into our browser (a div with 2 classes : instruction & less/more/correct)
-
-  const resetForm = () => {
-    reset.addEventListener("click", () => {
-      location.reload(); // Reset form by refreshing page
-    });
-  };
 
   let instruction = document.createElement("div");
 
@@ -50,8 +42,12 @@ const check = (number) => {
     input.disabled = true;
     // Display reset button
     reset.style.display = "inline";
-    resetForm();
+    // resetForm();
+    reset.addEventListener("click", () => {
+      location.reload(); // Refresh page
+    });
   }
+
   // Add element to our HTML page
   document.querySelector("#instructions").prepend(instruction);
 };
