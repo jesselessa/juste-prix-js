@@ -4,27 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Juste Prix</title>
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+
+    <title>C'est quoi ton numéro ?</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Le Juste Prix</h1>
+    <div class="container">
+      <h1>C'est quoi ton numéro&nbsp;?</h1>
 
-    <form id="form">
-      <div class="inputGroup">
-        <input
-          id="prix"
-          type="text"
-          name="prix"
-          placeholder="Devinez le prix (entre 0 et 100) !"
-        />
-        <button id="guess" name="guess" type="submit">Deviner</button>
-        <button id="reset" name="reset" type="button">Réinitialiser</button>
-      </div>
-      <span>Vous devez entrer un nombre.</span>
-    </form>
+      <form id="form">
+        <div class="inputGroup">
+          <input
+            id="number"
+            type="text"
+            name="number"
+            placeholder="Trouvez le nombre entre 0 et 100 !"
+            autocomplete="off"
+          />
+            <button id="guess" name="guess" type="submit">Deviner</button>
+            <button id="reset" name="reset" type="button">Réinitialiser</button>
+        </div>
+        <span>Vous devez entrer un nombre.</span>
+      </form>
 
-    <div id="instructions"></div>
+      <div id="instructions"></div>
+    </div>
 
     <script src="./script.js"></script>
   </body>

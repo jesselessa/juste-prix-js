@@ -1,34 +1,29 @@
-//* Step 1 - Selects elements
-let input = document.querySelector("#prix");
-let error = document.querySelector("span");
+//* Selects elements
 let form = document.querySelector("#form");
+let input = document.querySelector("#number");
+let error = document.querySelector("span");
 let reset = document.querySelector("#reset");
 
-//* Step 2 - Hide error and reset button
+//* Hide error and reset button
 error.style.display = "none";
 reset.style.display = "none";
 
-//* Step 3 - Create other variables
-let randomNumber = Math.floor(Math.random() * 101); // In order to generate an integer number between 0 and 100, we have to multiply the generated random number with Math.random() with the number of elements thats we want :
-// Math.random() * 100
-// Pb = 100 will never be available, therefore, add 1 => 100 + 1
-// Math.floor() => we want the largest integer less than or equal to 100
+//* Create other variables
+let randomNumber = Math.floor(Math.random() * 101);
 
 let strokes = 0; // Number of strokes/moves (everytime a user makes a proposal)
 
-let chosenNumber;
+let chosenNumber; // Number picked by user
 
-//* Step 4 - Create a function "check" and a function resetForm
+//* Create a function to check if we have found the correct number
 const check = (number) => {
-  // We can create an object => everytime we gonna make a new check, we gonna add an object into our browser (a div with 2 classes : instruction & less/more/correct)
+  // Everytime we make a check, we create a div (instruction) and we had a class (less, more or correct)
 
   let instruction = document.createElement("div");
 
   if (number < randomNumber) {
     // It's more !
-    // Add a content "#1 (4) It's more !"
-    // Add classes
-    instruction.textContent = ` #${strokes} (${number}) C'est plus !`;
+    instruction.textContent = `#${strokes} (${number}) C'est plus !`;
     instruction.className = "instruction more";
   } else if (number > randomNumber) {
     // It's less !
@@ -36,32 +31,34 @@ const check = (number) => {
     instruction.className = "instruction less";
   } else {
     // It's correct !
-    instruction.textContent = `#${strokes} (${number}) Félicitations, vous avez trouvé le juste prix !`;
+    instruction.textContent = `Bravo, vous avez trouvé le bon numéro (${number}) au ${
+      strokes === 1 ? `${strokes} er` : `${strokes} ème`
+    } essai !`;
     instruction.className = "instruction correct";
     // Disable button when number found
     input.disabled = true;
     // Display reset button
     reset.style.display = "inline";
-    // resetForm();
+    // Reset form
     reset.addEventListener("click", () => {
       location.reload(); // Refresh page
     });
   }
 
-  // Add element to our HTML page
+  // Add div to our HTML page
   document.querySelector("#instructions").prepend(instruction);
 };
 
-//* Step 5 - Check if user enters a number
+//* Check if user enters a number
 input.addEventListener("keyup", () => {
   if (isNaN(input.value)) {
-    error.style.display = "inline"; // Why not "block" ? An element with "block" takes all the width of the page, the other elements go beneath one another; with "inline", the other elements go next to each other if they are also in display inline
+    error.style.display = "inline";
   } else {
     error.style.display = "none";
   }
 });
 
-//* Step 6 - Act when sending the form
+//* Act when sending the form
 form.addEventListener("submit", (e) => {
   // Prevent form default behaviour
   e.preventDefault();
