@@ -74,3 +74,7 @@ form.addEventListener("submit", (e) => {
     check(chosenNumber); // Call our function that checks if chosen number is correct
   }
 });
+
+//* Add year to footer
+const date = document.querySelector(".year");
+date.prepend(new Date().getFullYear());
