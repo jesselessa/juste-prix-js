@@ -115,8 +115,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  text-align: center;
+  min-height: 10vh;
   background-color: #203354;
+  padding: 1rem;
   gap: 0.8rem;
 }
 footer a {
@@ -146,6 +148,11 @@ footer p,
   }
   #instructions {
     width: 92vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 400px) {
