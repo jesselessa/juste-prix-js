@@ -119,12 +119,13 @@ footer {
   background-color: #203354;
   gap: 0.8rem;
 }
-
+footer a {
+  margin-top: 0.5rem;
+}
 footer p,
 .year {
   color: white;
   font-size: 1.6rem;
-  /* font-weight: bold; */
 }
 
 /*! MEDIA QUERIES */
