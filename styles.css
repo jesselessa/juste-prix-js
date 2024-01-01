@@ -115,11 +115,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   min-height: 10vh;
   background-color: #203354;
-  padding: 1rem;
-  gap: 0.8rem;
+  padding: 2 1rem;
+  margin: auto;
 }
 footer a {
   margin-top: 0.5rem;
