@@ -75,6 +75,3 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-//* Add year to footer
-const date = document.querySelector(".year");
-date.prepend(new Date().getFullYear());
