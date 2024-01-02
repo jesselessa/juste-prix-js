@@ -32,4 +32,4 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 
 ---
 
-© 2024 Jessica ELESSA - Tous droits réservés.
+© 2023 Jessica ELESSA - Tous droits réservés.
