@@ -21,15 +21,8 @@ Bienvenue dans "C'est quoi ton numéro ?", un jeu simple pour tester votre intui
 2. Accédez au répertoire du projet : `cd whats-your-number-js`
 3. Ouvrez le fichier `index.html` dans votre navigateur.
 
-## Auteur
+## Contact
 
-- **Jessica Elessa**
-  - GitHub : [jesselessa](https://github.com/jesselessa)
+Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/) ou [GitHub](https://github.com/jesselessa).
 
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
-
-© 2024 Jessica ELESSA - Tous droits réservés.
+&copy; 2023, Jessica ELESSA - Tous droits réservés
