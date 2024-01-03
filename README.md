@@ -25,4 +25,6 @@ Bienvenue dans "C'est quoi ton numéro ?", un jeu simple pour tester votre intui
 
 Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/) ou [GitHub](https://github.com/jesselessa).
 
+---
+
 &copy; 2023, Jessica ELESSA - Tous droits réservés
