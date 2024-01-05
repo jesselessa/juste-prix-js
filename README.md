@@ -23,7 +23,7 @@ Bienvenue dans "C'est quoi ton numéro ?", un jeu simple pour tester votre intui
 
 ## Contact
 
-Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/) ou [GitHub](https://github.com/jesselessa).
+Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/).
 
 ---
 
