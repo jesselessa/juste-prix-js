@@ -3,6 +3,7 @@
 "C'est quoi ton numéro ?" est un jeu qui consiste à tester son intuition en devinant un nombre aléatoire entre 0 et 100.
 
 ## Table des matières
+
 1. [Démo](#demo)
 2. [Technologies utilisées](#technos)
 3. [Capture d'écran](#screenshot)
@@ -21,7 +22,7 @@ J'ai développé ce jeu avec HTML, CSS et JavaScript.
 
 ## Capture d'écran<a name="screenshot"></a>
 
-![Screenshot](.images/screenshot.png)
+![Screenshot](./images/screenshot.png)
 
 ## Comment jouer ?<a name="jouer"></a>
 
