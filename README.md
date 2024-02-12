@@ -8,7 +8,7 @@
 3. [Capture d'écran](#screenshot)
 4. [Comment jouer ?](#jouer)
 5. [Fonctionnalités](#fonctionnalites)
-6. [Sources](#sources)
+6. [Comment exécuter le projet localement ?](#executer)
 7. [Contact](#contact)
 
 ## Démo<a name="demo"></a>
