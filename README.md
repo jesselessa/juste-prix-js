@@ -45,7 +45,7 @@ J'ai développé ce jeu avec HTML, CSS et JavaScript.
 
 ## Contact<a name="contact"></a>
 
-Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/).
+Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jesselessa/).
 
 ---
 
